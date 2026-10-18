@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login - PLUTO WAVE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background:#000;color:#fff;font-family:Arial;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+.box{background:#111;padding:30px;border-radius:15px;width:90%;max-width:350px;text-align:center}
+h1{letter-spacing:2px} h1 span{color:red}
+input{width:100%;padding:12px;margin:10px 0;border-radius:25px;border:none;background:#222;color:#fff;box-sizing:border-box}
+.btn{width:100%;padding:12px;background:red;color:white;border:none;border-radius:25px;font-weight:bold;cursor:pointer;margin-top:10px}
+.google-btn{display:block;background:white;color:black;padding:12px;border-radius:25px;text-decoration:none;font-weight:bold;margin-top:15px}
+a{color:red;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>PLUTO <span>WAVE</span></h1>
+<h3>Log in</h3>
+<form method="POST">
+<input type="email" name="email" placeholder="yourname@gmail.com" required>
+<input type="password" name="password" placeholder="Password" required>
+<button class="btn" type="submit">LOG IN</button>
+</form>
+<a class="google-btn" href="/auth/google">Continue with Google</a>
+<p style="margin-top:15px;">No account? <a href="/signup">Sign up with Gmail</a></p>
+</div>
+</body>
+</html>
